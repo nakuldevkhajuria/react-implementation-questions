@@ -29,7 +29,7 @@ const Drop = () => {
         onChange={(e) => {
           const index = e.target.value
           setCountry(countries[index]);
-          console.log(country)
+         
         }}
       >
         <option value="">Select the country</option>
