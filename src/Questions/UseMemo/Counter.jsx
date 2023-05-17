@@ -6,6 +6,10 @@ const Counter = () => {
 
  
 //   const doubledCount = count * 2;
+//by using useMemo here, the value of doubledCount will only changes when the value of Count state changes
+//unless when count1 changes it will not print 'rendering' but without useMemo
+//const doubledCount line will get executed everytime any render happens in the code
+// it makes the code more optimze and incrrease the performance.
 const doubledCount = useMemo(()=>{
     console.log('rendering...')
     return count *2;
