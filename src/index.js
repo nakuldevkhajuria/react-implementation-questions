@@ -3,11 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import MyContext from './Questions/UseContext/Context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const nanu  = [
+  {
+    name:'nakul',
+    class:'8th',
+    rollno:'21',
+    data:'this data is coming from index.js'
+  }
+]
+
+;
 root.render(
+
   <React.StrictMode>
+    <MyContext.Provider value={nanu} >
     <App />
+  </MyContext.Provider>
+ 
   </React.StrictMode>
 );
 
